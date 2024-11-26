@@ -1,33 +1,79 @@
-**Solar System (*67)**  
-A program is required to model the concept of a planet in the solar system.
+# Solar System Project
 
-A planet has the following attributes:
-- A name of type `String` with an initial value of `null`.
-- Number of satellites of type `int` with an initial value of zero.
-- Mass in kilograms of type `double` with an initial value of zero.
-- Volume in cubic kilometers of type `double` with an initial value of zero.
-- Diameter in kilometers of type `int` with an initial value of zero.
-- Average distance to the Sun in millions of kilometers, of type `int`, with an initial value of zero.
-- Type of planet according to its size, of an enumerated type with the following possible values: GAS GIANT, TERRESTRIAL, and DWARF.
-- Observable with the naked eye, of type `boolean` with an initial value of `false`.
+## Description
 
-The class should include the following methods:
-- The class should have a constructor that initializes the values of its respective attributes.
-- Define a method that returns the values of the planet's attributes.
-- Calculate the density of the planet as the quotient of its mass and volume.
-- Determine if a planet in the solar system is considered an outer planet.
-  - An outer planet is located beyond the asteroid belt. The asteroid belt lies between 2.1 and 3.4 AU. One astronomical unit (AU) is the distance between the Earth and the Sun = 149,597,870 km.
-- In the `main` method of the `App` class, create two planets and display the values of their attributes on screen. Additionally, print the density of each planet and whether the planet is an outer planet in the solar system.
+This project simulates the concept of a planet in the solar system. It allows the user to create planets, calculate their properties such as density, and determine whether a planet is an outer planet based on its distance from the Sun.
 
-**Extension:**
-- Add two attributes to the `Planet` class. The first should represent the planet's orbital period (in years). The second attribute represents the planet's rotation period (in days).
-- Modify the class constructor to initialize the values of these two new attributes.
-- Modify the `print` method to display the values of the new attributes on the screen.
+### Planet Attributes:
+- **Name**: A string, initially null.
+- **Number of Satellites**: An integer, initially 0.
+- **Mass**: A double representing the mass in kilograms, initially 0.
+- **Volume**: A double representing the volume in cubic kilometers, initially 0.
+- **Diameter**: An integer representing the diameter in kilometers, initially 0.
+- **Average Distance to the Sun**: An integer representing the distance in millions of kilometers, initially 0.
+- **Planet Type**: An enum (Gaseous, Terrestrial, or Dwarf).
+- **Observable to the Naked Eye**: A boolean, initially false.
 
-**Requirements:**
-- The `Planet` class must be tested (Minimum 70% coverage).
-- The Readme should include the class diagram.
+### Features:
+- Constructor to initialize planet attributes.
+- Method to return planet attributes.
+- Method to calculate the density of a planet.
+- Method to check if a planet is an outer planet (beyond the asteroid belt).
+- The asteroid belt is located between 2.1 and 3.4 AU (Astronomical Units).
 
-**Deliverables:**
-- Link to the GitHub repository
-- Screenshot of the "Testing" section in Visual Studio Code showing the test coverage
+### Expansion:
+- Added two attributes:
+  - **Orbital Period** (in years)
+  - **Rotation Period** (in days)
+- Modified constructor to initialize these new attributes.
+- Modified the print method to display the new attributes.
+
+## Example Console Interaction
+
+    Planet Name: Mercury
+    Number of Satellites: 0
+    Mass: 3.3E23 kg
+    Volume: 6.083E13 km³
+    Diameter: 4880 km
+    Average Distance to Sun: 57.9 million km
+    Planet Type: Terrestrial
+    Observable to the naked eye: true
+    Orbital Period: 0.24 Earth years
+    Rotation Period: 58.6 days
+    Density: 5.4249547920434E9
+    Is Outer Planet: false
+
+## Installation Steps
+
+1. Clone the repository:
+    
+    git clone https://github.com/NelliYanchuk/java-solar-system.git
+
+2. Navigate to the project folder:
+    
+    cd java-solar-system
+
+3. Build and run the project using your preferred IDE or command line.
+
+## Test Execution
+
+To run the tests:
+
+1. Ensure that JUnit 5 is included in your project dependencies.
+2. Run the tests through your IDE or via command line using Maven/Gradle.
+
+## Diagrams
+Include diagrams such as:
+- **Test Coverage Diagram**:
+
+<img src="images/test_cover_planet.png" alt="Test Coverage" width="25%">
+
+- **Class Diagram**:
+
+<img src="images/diagram-planet.png" alt="Class Diagram" width="40%">
+
+
+## Author
+**Nelli Yanchuk** - Developer
+
+Contact me with: [GitHub](https://github.com/NelliYanchuk) / [LinkedIn](https://www.linkedin.com/in/nelli-yanchuk-a24b81138/)
