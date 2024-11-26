@@ -13,11 +13,18 @@ public class PlanetTypeTest {
     }
 
     @Test
-    void testValues() {
-        // Test that the enum contains the correct values
-        assertTrue(PlanetType.GAS_GIANT instanceof PlanetType);
-        assertTrue(PlanetType.TERRESTRIAL instanceof PlanetType);
-        assertTrue(PlanetType.DWARF instanceof PlanetType);
+    void testGetDescriptionGasGiant() {
+        assertEquals("Gas giant", PlanetType.GAS_GIANT.getDescription());
+    }
+
+    @Test
+    void testGetDescriptionTerrestrial() {
+        assertEquals("Terrestrial", PlanetType.TERRESTRIAL.getDescription());
+    }
+
+    @Test
+    void testGetDescriptionDwarf() {
+        assertEquals("Dwarf", PlanetType.DWARF.getDescription());
     }
 
 }
