@@ -30,10 +30,6 @@ public class Planet {
         this.rotationPeriodInDays = rotationPeriodInDays;
     }
 
-    // Default constructor
-    public Planet() {
-    }
-
     // Getters and Setters
     public String getName() {
         return name;
