@@ -3,16 +3,16 @@ package dev.nyanchuk;
 public class Planet {
 
     // Attributes
-    private String name = null;
-    private int numberOfSatellite = 0;
-    private double massInKg = 0.0;
-    private double volumeIn3Km = 0.0;
-    private int diameterInKm = 0;
-    private double averageDistanceToSunInMillionKm = 0;
-    private PlanetType type = PlanetType.TERRESTRIAL;
-    private boolean isVisible = false;
-    private double orbitalPeriodInYears = 0.0;
-    private double rotationPeriodInDays = 0;
+    private String name;
+    private int numberOfSatellite;
+    private double massInKg;
+    private double volumeIn3Km;
+    private int diameterInKm;
+    private double averageDistanceToSunInMillionKm;
+    private PlanetType type;
+    private boolean isVisible;
+    private double orbitalPeriodInYears;
+    private double rotationPeriodInDays;
 
     // Constructor to initialize the attributes
     public Planet(String name, int numberOfSatellite, double massInKg, double volumeIn3Km, int diameterInKm,

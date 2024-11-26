@@ -1,0 +1,48 @@
+// using in https://mermaid-js.github.io/mermaid-live-editor/
+
+classDiagram
+    class App{
+    }
+
+    namespace Model{
+    class Planet{
+      -String name
+      -int numberOfSatellite
+      -double massInKg
+      -double volumeIn3Km
+      -int diameterInKm
+      -double averageDistanceToSunInMillionKm
+      -PlanetType type
+      -boolean isVisible
+      -double orbitalPeriodInYears
+      -double rotationPeriodInDays
+      + All Getters and Setters ()
+    }
+    class PlanetType{
+    <<Enumeration>>
+      GAS_GIANT
+      TERRESTRIAL
+      DWARF
+      +String getDescription()
+    }}
+
+    namespace Service{
+    class PlanetController{
+      +double calculateDensity( Planet planet)
+      +boolean isOuterPlanet(Planet planet)
+    }}
+
+    namespace View{
+    class PlanetView{
+      +void greeting()
+      +void printDetails(Planet planet)
+    }}
+
+    Start ()-- App
+    App ..> Planet : Dependency
+    App ..> PlanetType : Dependency
+    App ..> PlanetView : Dependency
+    Planet ..> PlanetType : Dependency
+    PlanetController ..> Planet : Dependency
+    PlanetView ..> Planet : Dependency
+    PlanetView ..> PlanetController : Dependency
