@@ -8,16 +8,16 @@ public class Planet {
     private double massInKg = 0.0;
     private double volumeIn3Km = 0.0;
     private int diameterInKm = 0;
-    private int averageDistanceToSunInMillionKm = 0;
+    private double averageDistanceToSunInMillionKm = 0;
     private PlanetType type = PlanetType.TERRESTRIAL;
     private boolean isVisible = false;
     private double orbitalPeriodInYears = 0.0;
-    private int rotationPeriodInDays = 0;
+    private double rotationPeriodInDays = 0;
 
     // Constructor to initialize the attributes
     public Planet(String name, int numberOfSatellite, double massInKg, double volumeIn3Km, int diameterInKm,
-            int averageDistanceToSunInMillionKm, PlanetType type, boolean isVisible,
-            double orbitalPeriodInYears, int rotationPeriodInDays) {
+            double averageDistanceToSunInMillionKm, PlanetType type, boolean isVisible,
+            double orbitalPeriodInYears, double rotationPeriodInDays) {
         this.name = name;
         this.numberOfSatellite = numberOfSatellite;
         this.massInKg = massInKg;
@@ -71,7 +71,7 @@ public class Planet {
         this.diameterInKm = diameterInKm;
     }
 
-    public int getAverageDistanceToSunInMillionKm() {
+    public double getAverageDistanceToSunInMillionKm() {
         return averageDistanceToSunInMillionKm;
     }
 
@@ -103,7 +103,7 @@ public class Planet {
         this.orbitalPeriodInYears = orbitalPeriodInYears;
     }
 
-    public int getRotationPeriodInDays() {
+    public double getRotationPeriodInDays() {
         return rotationPeriodInDays;
     }
 
