@@ -4,6 +4,8 @@ public final class App {
 
     public static void main(String[] args) {
 
+        PlanetView.greeting();
+
         Planet mercury = new Planet(
                 "Mercury",
                 0,
@@ -15,20 +17,21 @@ public final class App {
                 true,
                 0.24,
                 58.6);
+
+        Planet saturn = new Planet(
+                "Saturn",
+                82,
+                5.683e26,
+                8.2713e14,
+                116460,
+                1427,
+                PlanetType.GAS_GIANT,
+                false,
+                29.5,
+                10.7);
+
+        PlanetView.printDetails(mercury);
+        PlanetView.printDetails(saturn);
+
     }
-
-    Planet saturn = new Planet(
-            "Saturn",
-            82,
-            5.683e26,
-            8.2713e14,
-            116460,
-            1427,
-            PlanetType.GAS_GIANT,
-            false,
-            29.5,
-            10.7);
-
-    
-
 }
